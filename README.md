@@ -1,6 +1,6 @@
 # E2E - Inference Endpoints Hugging Face
 
-In today's assignment, we'll create an E2E Application through Hugging Face Inference Endpoints!
+In today's event, we'll create an E2E Application through Hugging Face Inference Endpoints!
 
 There are 2 main sections to this event:
 
