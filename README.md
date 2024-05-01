@@ -1,8 +1,8 @@
 # E2E - Inference Endpoints Hugging Face
 
-In today's assignment, we'll be creating an Open Source LLM-powered LangChain RAG Application.
+In today's assignment, we'll create an E2E Application through Hugging Face Inference Endpoints!
 
-There are 2 main sections to this assignment:
+There are 2 main sections to this event:
 
 ### Deploy LLM and Embedding Model to SageMaker Endpoint Through Hugging Face Inference Endpoints
 
@@ -14,7 +14,7 @@ Create a "+ New Endpoint" from the Inference Endpoints dashboard.
 
 ![image](https://i.imgur.com/G6Bq9KC.png)
 
-Select the `meta-llama/Meta-Llama-3-8B-Instruct` model repository and name your endpoint. Select N. Virginia as your region (`us-east-1`). Give your endpoint an appropriate name.
+Select the `ai-maker-space/gen-z-translate-llama-3-instruct-v1` model repository and name your endpoint. Select N. Virginia as your region (`us-east-1`). Give your endpoint an appropriate name.
 
 Select the following settings for your `Advanced Configuration`.
 
@@ -28,18 +28,16 @@ If you were successful, you should see the following screen:
 
 ![image](https://i.imgur.com/IBYG3wm.png)
 
-You'll repeat the same process for your embeddings model!
+You'll repeat the same process for your embedding model!
 
 > #### NOTE: PLEASE SHUTDOWN YOUR INSTANCES WHEN YOU HAVE COMPLETED THE ASSIGNMENT TO PREVENT UNESSECARY CHARGES.
 
-### Create RAG Pipeline with LangChain & LangSmith
+### Create a Simple Chat Application leveraging the new endpoint!
 
-We'll work through this week's notebook after setting up our endpoints!
+First, we [fine-tune](https://colab.research.google.com/drive/1TX-N9E7lESNkxIrFEC6sn0rMMfYRCmKg#scrollTo=iRGG0QCNwT6J) Llama 3 8B Instruct for a specific task, in this case: A translation task!
 
-The notebook will be broken into the following parts:
- 
-The Colab link is provided [here](https://colab.research.google.com/drive/1CVHGdSDFhfeyGl20ZK-f52lst3xqKVCf?usp=sharing)
+Then, we create a Docker Hugging Face space powering a Chainlit UI - code available [here](https://huggingface.co/spaces/ai-maker-space/GenZAI/tree/main)
 
 ### Terminating Your Resources
 
-Please head to the settings of each endpoint and select `Delete Endpoint`. You will need to type the name of the endpoint to delete the resources.
+Please go to each endpoint's settings and select `Delete Endpoint`. To delete the resources, you will need to type the endpoint's name.
